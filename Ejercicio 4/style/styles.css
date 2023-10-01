@@ -1,0 +1,73 @@
+:root {
+    --white: #FDFEFE; 
+    --brown: #E6CCB2;;
+    --olive: #606c38;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.card {
+    background-color: var(--white);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.image-section {
+    height: 225px;
+    background-color: var(--white);
+}
+
+.card .img-one{
+    background-image: url(./Figma.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.content h2 {
+    letter-spacing: 1.5px;
+}
+
+.content h3 {
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.content p {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--white);
+    letter-spacing: 1.5px;
+    display: inline-block;
+    background-color: var(--brown);
+    padding: 8px 15px;
+}
+
+.content a:hover {
+    background-color: var(--olive);
+    color: var(--brown);
+    transition: 1s ease;
+}
+
+
